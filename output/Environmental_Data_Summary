@@ -1,0 +1,35 @@
+    cluster          num         lon              lat              pH              EC             GWC             per_clay         per_sand    
+ Min.   : 1.0   Min.   :1   Min.   :-94.24   Min.   :36.07   Min.   :4.670   Min.   :  9.6   Min.   :0.07188   Min.   : 1.523   Min.   :12.12  
+ 1st Qu.: 8.0   1st Qu.:2   1st Qu.:-94.24   1st Qu.:36.07   1st Qu.:5.683   1st Qu.: 85.4   1st Qu.:0.20471   1st Qu.: 6.923   1st Qu.:16.53  
+ Median :15.5   Median :3   Median :-94.23   Median :36.07   Median :5.965   Median :105.5   Median :0.26766   Median : 9.866   Median :19.81  
+ Mean   :15.5   Mean   :3   Mean   :-94.23   Mean   :36.07   Mean   :5.966   Mean   :116.2   Mean   :0.26942   Mean   :10.348   Mean   :20.57  
+ 3rd Qu.:23.0   3rd Qu.:4   3rd Qu.:-94.23   3rd Qu.:36.07   3rd Qu.:6.207   3rd Qu.:136.2   3rd Qu.:0.34005   3rd Qu.:13.168   3rd Qu.:24.34  
+ Max.   :30.0   Max.   :5   Max.   :-94.23   Max.   :36.07   Max.   :6.960   Max.   :375.5   Max.   :0.49295   Max.   :32.303   Max.   :33.62  
+    per_silt           Al              As                B               Ca              Cd                 Co                Cr         
+ Min.   :41.57   Min.   :22.00   Min.   :0.00000   Min.   :1.310   Min.   : 65.6   Min.   :0.002000   Min.   :0.00600   Min.   :0.00500  
+ 1st Qu.:64.73   1st Qu.:40.80   1st Qu.:0.00400   1st Qu.:1.633   1st Qu.:135.0   1st Qu.:0.003000   1st Qu.:0.02000   1st Qu.:0.01000  
+ Median :70.08   Median :47.80   Median :0.00800   Median :4.080   Median :166.0   Median :0.004000   Median :0.02500   Median :0.01400  
+ Mean   :69.08   Mean   :46.73   Mean   :0.00832   Mean   :3.219   Mean   :166.7   Mean   :0.006027   Mean   :0.02677   Mean   :0.01461  
+ 3rd Qu.:74.57   3rd Qu.:53.23   3rd Qu.:0.01200   3rd Qu.:4.617   3rd Qu.:193.0   3rd Qu.:0.006000   3rd Qu.:0.03275   3rd Qu.:0.01700  
+ Max.   :84.75   Max.   :66.40   Max.   :0.02300   Max.   :5.240   Max.   :292.0   Max.   :0.094000   Max.   :0.07300   Max.   :0.04500  
+       Cu               Fe              K                Mg               Mn              Mo                Na              Ni         
+ Min.   :0.0220   Min.   :16.20   Min.   : 2.030   Min.   : 1.340   Min.   :1.080   Min.   :0.00000   Min.   : 3.04   Min.   :0.04300  
+ 1st Qu.:0.0890   1st Qu.:25.80   1st Qu.: 4.330   1st Qu.: 4.565   1st Qu.:2.200   1st Qu.:0.00000   1st Qu.: 7.67   1st Qu.:0.06700  
+ Median :0.1065   Median :31.25   Median : 5.075   Median : 7.030   Median :2.745   Median :0.00100   Median : 9.71   Median :0.07750  
+ Mean   :0.1091   Mean   :32.23   Mean   : 5.325   Mean   : 7.202   Mean   :2.908   Mean   :0.00072   Mean   :10.24   Mean   :0.08361  
+ 3rd Qu.:0.1235   3rd Qu.:37.85   3rd Qu.: 5.910   3rd Qu.: 9.150   3rd Qu.:3.328   3rd Qu.:0.00100   3rd Qu.:12.18   3rd Qu.:0.09300  
+ Max.   :0.3110   Max.   :53.90   Max.   :23.200   Max.   :15.900   Max.   :6.930   Max.   :0.00300   Max.   :25.70   Max.   :0.17000  
+       P                S               Ti                Zn            per_som            PerN              PerC           CNRatio      
+ Min.   :0.2100   Min.   :0.533   Min.   :0.02500   Min.   :0.0550   Min.   : 1.315   Min.   :0.09077   Min.   :0.9076   Min.   : 9.547  
+ 1st Qu.:0.6747   1st Qu.:0.966   1st Qu.:0.03100   1st Qu.:0.1663   1st Qu.: 3.284   1st Qu.:0.19542   1st Qu.:2.1644   1st Qu.:10.660  
+ Median :0.8730   Median :1.085   Median :0.03500   Median :0.1990   Median : 3.626   Median :0.21332   Median :2.3836   Median :11.051  
+ Mean   :1.0272   Mean   :1.207   Mean   :0.03979   Mean   :0.2048   Mean   : 4.000   Mean   :0.21359   Mean   :2.3690   Mean   :11.099  
+ 3rd Qu.:1.1000   3rd Qu.:1.240   3rd Qu.:0.04500   3rd Qu.:0.2350   3rd Qu.: 4.009   3rd Qu.:0.22916   3rd Qu.:2.5189   3rd Qu.:11.509  
+ Max.   :4.0400   Max.   :4.510   Max.   :0.13600   Max.   :0.3410   Max.   :34.915   Max.   :0.31363   Max.   :3.3433   Max.   :13.084  
+      Ele       
+ Min.   :375.0  
+ 1st Qu.:375.1  
+ Median :375.2  
+ Mean   :375.2  
+ 3rd Qu.:375.2  
+ Max.   :375.8 
