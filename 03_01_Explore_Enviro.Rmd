@@ -35,48 +35,247 @@ coordinates(sd.full) <- ~ lon + lat
 
 ```{r}
 ##Check pH
+plot(sd.full$pH)
 ggdensity(sd.full$pH,
           main = "Density of pH",
           xlab = "pH")
 ggqqplot(sd.full$pH)
 shapiro.test(sd.full$pH)
-#pH is normal
+#pH has a normal distribution
 
 ##Check EC
+plot(sd.full$EC)
 ggdensity(sd.full$EC,
           main = "Density of EC",
           xlab = "EC")
 ggqqplot(sd.full$EC)
 shapiro.test(sd.full$EC)
-#EC has a non-normal distribution - need to transform data
+#EC has a non-normal distribution 
 
 ##Check GWC
+plot(sd.full$GWC)
+ggdensity(sd.full$GWC,
+          main = "Density of GWC",
+          xlab = "GWC")
+ggqqplot(sd.full$GWC)
+shapiro.test(sd.full$GWC)
+#GWC has a non-normal distribution
 
 ##Check per_clay
+plot(sd.full$per_clay)
+ggdensity(sd.full$per_clay,
+          main = "Density of per_clay",
+          xlab = "per_clay")
+ggqqplot(sd.full$per_clay)
+shapiro.test(sd.full$per_clay)
+#Clay has a non-normal distribution
 
 ##Check per_sand
+plot(sd.full$per_sand)
+ggdensity(sd.full$per_sand,
+          main = "Density of per_sand",
+          xlab = "per_sand")
+ggqqplot(sd.full$per_sand)
+shapiro.test(sd.full$per_sand)
+#Sand has a non-normal distribution
 
 ##Check per_silt
+plot(sd.full$per_silt)
+ggdensity(sd.full$per_silt,
+          main = "Density of per_silt",
+          xlab = "per_silt")
+ggqqplot(sd.full$per_silt)
+shapiro.test(sd.full$per_silt)
+#Silt is non-normal
 
 ##Check Al
+ggdensity(sd.full$Al,
+          main = "Density of Al",
+          xlab = "Al")
+ggqqplot(sd.full$Al)
+shapiro.test(sd.full$Al)
+#Al has a normal distribution
 
 ##Check Ca
+ggdensity(sd.full$Ca,
+          main = "Density of Ca",
+          xlab = "Ca")
+ggqqplot(sd.full$Ca)
+shapiro.test(sd.full$Ca)
+#Ca has a normal distribution
 
-##Check GWC
+##Check Co
+ggdensity(sd.full$Co,
+          main = "Density of Co",
+          xlab = "Co")
+ggqqplot(sd.full$Co)
+shapiro.test(sd.full$Co)
+#Co has a non-normal distribution
 
-##Check GWC
+##Check Cr
+ggdensity(sd.full$Cr,
+          main = "Density of Cr",
+          xlab = "Cr")
+ggqqplot(sd.full$Cr,
+         main = "qq plot for Cr")
+shapiro.test(sd.full$Cr)
+#Cr has a non-normal distribution
 
-##Check GWC
+##Check Cu
+ggdensity(sd.full$Cu,
+          main = "Density of Cu",
+          xlab = "Cu")
+ggqqplot(sd.full$Cu,
+         main = "qq plot for Cu")
+shapiro.test(sd.full$Cu)
+#Cu has a non-normal distribution
 
-##Check GWC
+##Check Fe
+ggdensity(sd.full$Fe,
+          main = "Density of Fe",
+          xlab = "Fe")
+ggqqplot(sd.full$Cu,
+         main = "qq plot for Fe")
+shapiro.test(sd.full$Fe)
+#Fe has a non-normal distribution
 
-##Check GWC
+##Check K
+ggdensity(sd.full$K,
+          main = "Density of K",
+          xlab = "K")
+ggqqplot(sd.full$K,
+         main = "qq plot for K")
+shapiro.test(sd.full$K)
+#K has a non-normal distribution and one possible outlier
 
-##Check GWC
+##Check Mg
+ggdensity(sd.full$Mg,
+          main = "Density of Mg",
+          xlab = "Mg")
+ggqqplot(sd.full$Mg,
+         main = "qq plot for Mg")
+shapiro.test(sd.full$Mg)
+#Mg has a non-normal distribution
 
-##Check GWC
+##Check Mn
+ggdensity(sd.full$Mn,
+          main = "Density of Mn",
+          xlab = "Mn")
+ggqqplot(sd.full$Mn,
+         main = "qq plot for Mn")
+shapiro.test(sd.full$Mn)
+#Mn has a non-normal distribution
 
-##Check GWC
+##Check Na
+ggdensity(sd.full$Na,
+          main = "Density of Na",
+          xlab = "Na")
+ggqqplot(sd.full$Na,
+         main = "qq plot for Na")
+shapiro.test(sd.full$Na)
+#Na has a non-normal distribution
+
+##Check Ni
+ggdensity(sd.full$Ni,
+          main = "Density of Ni",
+          xlab = "Ni")
+ggqqplot(sd.full$Ni,
+         main = "qq plot for Ni")
+shapiro.test(sd.full$Ni)
+#Ni has a non-normal distribution
+
+##Check P
+ggdensity(sd.full$P,
+          main = "Density of P",
+          xlab = "P")
+ggqqplot(sd.full$P,
+         main = "qq plot for P")
+shapiro.test(sd.full$P)
+#P has a non-normal distribution
+
+##Check S
+ggdensity(sd.full$S,
+          main = "Density of S",
+          xlab = "S")
+ggqqplot(sd.full$S,
+         main = "qq plot for S")
+shapiro.test(sd.full$S)
+#S has a non-normal distribution
+
+##Check Ti
+plot(sd.full$Ti)
+ggdensity(sd.full$Ti,
+          main = "Density of Ti",
+          xlab = "Ti")
+ggqqplot(sd.full$Ti,
+         main = "qq plot for Ti")
+shapiro.test(sd.full$Ti)
+#Ti has a non-normal distribution, possible outlier
+
+##Check Zn
+plot(sd.full$Zn)
+ggdensity(sd.full$Zn,
+          main = "Density of Zn",
+          xlab = "Zn")
+ggqqplot(sd.full$Zn,
+         main = "qq plot for Zn")
+shapiro.test(sd.full$Zn)
+#Zn has a non-normal distribution
+
+
+##Check per_som
+plot(sd.full$per_som)
+ggdensity(sd.full$per_som,
+          main = "Density of per_som",
+          xlab = "per_som")
+ggqqplot(sd.full$per_som,
+         main = "qq plot for per_som")
+shapiro.test(sd.full$per_som)
+#per_som has a non-normal distribution, two possible outliers
+
+
+##Check PerN
+plot(sd.full$PerN)
+ggdensity(sd.full$PerN,
+          main = "Density of PerN",
+          xlab = "PerN")
+ggqqplot(sd.full$PerN,
+         main = "qq plot for PerN")
+shapiro.test(sd.full$PerN)
+#PerN has a non-normal distribution, one data point looks slightly suspect (outlier)
+
+
+##Check PerN
+plot(sd.full$PerC)
+ggdensity(sd.full$PerC,
+          main = "Density of PerC",
+          xlab = "PerC")
+ggqqplot(sd.full$PerC,
+         main = "qq plot for PerC")
+shapiro.test(sd.full$PerC)
+#PerC has a non-normal distribution, one data point looks slightly suspect (outlier)
+
+
+##Check CNRatio
+plot(sd.full$CNRatio)
+ggdensity(sd.full$CNRatio,
+          main = "Density of CNRatio",
+          xlab = "CNRatio")
+ggqqplot(sd.full$PerN,
+         main = "qq plot for CNRatio")
+shapiro.test(sd.full$CNRatio)
+#CNRatio has a normal distribution
+
+##Check Ele
+plot(sd.full$Ele)
+ggdensity(sd.full$Ele,
+          main = "Density of Ele",
+          xlab = "Ele")
+ggqqplot(sd.full$Ele,
+         main = "qq plot for Ele")
+shapiro.test(sd.full$Ele)
+#Elevation has a non-normal distribution
+
 
 
 
