@@ -1,0 +1,40 @@
+---
+title: "Fungal data exploration"
+output: html_notebook
+---
+
+Load libraries and load in phyloseq data (use already )
+
+```{r}
+library(vegan)
+library("phyloseq")
+library("ggplot2")
+library("scales")
+library("grid")
+
+# Load phyloseq object (reduced number of variables...from "./04_fungal_gdm_pre-processing_relabund.R")
+ps <- readRDS("./output/WWP_ITS_phyloseq_relabund.RDS")
+```
+
+
+#Optional: Limit all analyses to the top 10 most abundant taxa I’m not doing this one just yet, but it can make a first-look anlyses a little easier to understand.
+
+```{r}
+ TopNOTUs = names(sort(taxa_sums(ps_sub), TRUE)[1:50])
+ ps_10 <- prune_taxa(TopNOTUs, ps_sub)
+ plot_bar(ps_10, "Depth", fill = "Genus", facet_grid = ~Area)
+ 
+ ps_sub <- ps_10
+```
+
+Exploratory bar plots
+
+Start with a simple rank-abudnance barplot, using cumulative fractional abundance of each OTU in the dataset. 
+```{r}
+plot_bar(ps, "Family", fill="Genus")
+```
+
+
+
+
+
