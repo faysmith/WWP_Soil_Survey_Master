@@ -35,7 +35,11 @@ coordinates(sd.full) <- ~ lon + lat
 
 ```{r}
 ##Check pH
-plot(sd.full$pH)
+plot(sd.full$pH,
+     main = "pH",
+     xlab = "Sample Number")
+hist(sd.full$pH,
+     breaks = 50)
 ggdensity(sd.full$pH,
           main = "Density of pH",
           xlab = "pH")
@@ -44,7 +48,11 @@ shapiro.test(sd.full$pH)
 #pH has a normal distribution
 
 ##Check EC
-plot(sd.full$EC)
+plot(sd.full$EC,
+     main = "EC",
+     xlab = "Sample Number")
+hist(sd.full$EC,
+     breaks = 50)
 ggdensity(sd.full$EC,
           main = "Density of EC",
           xlab = "EC")
@@ -53,7 +61,11 @@ shapiro.test(sd.full$EC)
 #EC has a non-normal distribution 
 
 ##Check GWC
-plot(sd.full$GWC)
+plot(sd.full$GWC,
+     main = "GWC",
+     xlab = "Sample Number")
+hist(sd.full$GWC,
+     breaks = 50)
 ggdensity(sd.full$GWC,
           main = "Density of GWC",
           xlab = "GWC")
@@ -62,7 +74,11 @@ shapiro.test(sd.full$GWC)
 #GWC has a non-normal distribution
 
 ##Check per_clay
-plot(sd.full$per_clay)
+plot(sd.full$per_clay,
+     main = "per_clay",
+     xlab = "Sample Number")
+hist(sd.full$per_clay,
+     breaks = 50)
 ggdensity(sd.full$per_clay,
           main = "Density of per_clay",
           xlab = "per_clay")
@@ -71,7 +87,11 @@ shapiro.test(sd.full$per_clay)
 #Clay has a non-normal distribution
 
 ##Check per_sand
-plot(sd.full$per_sand)
+plot(sd.full$per_sand,
+     main = "per_sand",
+     xlab = "Sample Number")
+hist(sd.full$per_sand,
+     breaks = 50)
 ggdensity(sd.full$per_sand,
           main = "Density of per_sand",
           xlab = "per_sand")
@@ -80,7 +100,11 @@ shapiro.test(sd.full$per_sand)
 #Sand has a non-normal distribution
 
 ##Check per_silt
-plot(sd.full$per_silt)
+plot(sd.full$per_silt,
+     main = "per_silt",
+     xlab = "Sample Number")
+hist(sd.full$per_silt,
+     breaks = 50)
 ggdensity(sd.full$per_silt,
           main = "Density of per_silt",
           xlab = "per_silt")
@@ -89,6 +113,11 @@ shapiro.test(sd.full$per_silt)
 #Silt is non-normal
 
 ##Check Al
+plot(sd.full$Al,
+     main = "Al",
+     xlab = "Sample Number")
+hist(sd.full$Al,
+     breaks = 50)
 ggdensity(sd.full$Al,
           main = "Density of Al",
           xlab = "Al")
@@ -97,6 +126,11 @@ shapiro.test(sd.full$Al)
 #Al has a normal distribution
 
 ##Check Ca
+plot(sd.full$Ca,
+     main = "Ca",
+     xlab = "Sample Number")
+hist(sd.full$Ca,
+     breaks = 50)
 ggdensity(sd.full$Ca,
           main = "Density of Ca",
           xlab = "Ca")
@@ -105,6 +139,11 @@ shapiro.test(sd.full$Ca)
 #Ca has a normal distribution
 
 ##Check Co
+plot(sd.full$Co,
+     main = "Co",
+     xlab = "Sample Number")
+hist(sd.full$Co,
+     breaks = 50)
 ggdensity(sd.full$Co,
           main = "Density of Co",
           xlab = "Co")
@@ -113,6 +152,11 @@ shapiro.test(sd.full$Co)
 #Co has a non-normal distribution
 
 ##Check Cr
+plot(sd.full$Cr,
+     main = "Cr",
+     xlab = "Sample Number")
+hist(sd.full$Cr,
+     breaks = 50)
 ggdensity(sd.full$Cr,
           main = "Density of Cr",
           xlab = "Cr")
@@ -122,6 +166,11 @@ shapiro.test(sd.full$Cr)
 #Cr has a non-normal distribution
 
 ##Check Cu
+plot(sd.full$Cu,
+     main = "Cu",
+     xlab = "Sample Number")
+hist(sd.full$Cu,
+     breaks = 50)
 ggdensity(sd.full$Cu,
           main = "Density of Cu",
           xlab = "Cu")
@@ -131,6 +180,11 @@ shapiro.test(sd.full$Cu)
 #Cu has a non-normal distribution
 
 ##Check Fe
+plot(sd.full$Fe,
+     main = "Fe",
+     xlab = "Sample Number")
+hist(sd.full$Fe,
+     breaks = 50)
 ggdensity(sd.full$Fe,
           main = "Density of Fe",
           xlab = "Fe")
@@ -140,6 +194,11 @@ shapiro.test(sd.full$Fe)
 #Fe has a non-normal distribution
 
 ##Check K
+plot(sd.full$K,
+     main = "K",
+     xlab = "Sample Number")
+hist(sd.full$K,
+     breaks = 50)
 ggdensity(sd.full$K,
           main = "Density of K",
           xlab = "K")
@@ -149,6 +208,11 @@ shapiro.test(sd.full$K)
 #K has a non-normal distribution and one possible outlier
 
 ##Check Mg
+plot(sd.full$Mg,
+     main = "Mg",
+     xlab = "Sample Number")
+hist(sd.full$Mg,
+     breaks = 50)
 ggdensity(sd.full$Mg,
           main = "Density of Mg",
           xlab = "Mg")
@@ -158,6 +222,11 @@ shapiro.test(sd.full$Mg)
 #Mg has a non-normal distribution
 
 ##Check Mn
+plot(sd.full$Mn,
+     main = "Mn",
+     xlab = "Sample Number")
+hist(sd.full$Mn,
+     breaks = 50)
 ggdensity(sd.full$Mn,
           main = "Density of Mn",
           xlab = "Mn")
@@ -167,6 +236,11 @@ shapiro.test(sd.full$Mn)
 #Mn has a non-normal distribution
 
 ##Check Na
+plot(sd.full$Na,
+     main = "Na",
+     xlab = "Sample Number")
+hist(sd.full$Na,
+     breaks = 50)
 ggdensity(sd.full$Na,
           main = "Density of Na",
           xlab = "Na")
@@ -176,6 +250,11 @@ shapiro.test(sd.full$Na)
 #Na has a non-normal distribution
 
 ##Check Ni
+plot(sd.full$Ni,
+     main = "Ni",
+     xlab = "Sample Number")
+hist(sd.full$Ni,
+     breaks = 50)
 ggdensity(sd.full$Ni,
           main = "Density of Ni",
           xlab = "Ni")
@@ -185,6 +264,11 @@ shapiro.test(sd.full$Ni)
 #Ni has a non-normal distribution
 
 ##Check P
+plot(sd.full$P,
+     main = "P",
+     xlab = "Sample Number")
+hist(sd.full$P,
+     breaks = 50)
 ggdensity(sd.full$P,
           main = "Density of P",
           xlab = "P")
@@ -194,6 +278,11 @@ shapiro.test(sd.full$P)
 #P has a non-normal distribution
 
 ##Check S
+plot(sd.full$S,
+     main = "S",
+     xlab = "Sample Number")
+hist(sd.full$S,
+     breaks = 50)
 ggdensity(sd.full$S,
           main = "Density of S",
           xlab = "S")
@@ -203,7 +292,11 @@ shapiro.test(sd.full$S)
 #S has a non-normal distribution
 
 ##Check Ti
-plot(sd.full$Ti)
+plot(sd.full$Ti,
+     main = "Ti",
+     xlab = "Sample Number")
+hist(sd.full$Ti,
+     breaks = 50)
 ggdensity(sd.full$Ti,
           main = "Density of Ti",
           xlab = "Ti")
@@ -213,7 +306,11 @@ shapiro.test(sd.full$Ti)
 #Ti has a non-normal distribution, possible outlier
 
 ##Check Zn
-plot(sd.full$Zn)
+plot(sd.full$Zn,
+     main = "Zn",
+     xlab = "Sample Number")
+hist(sd.full$Zn,
+     breaks = 50)
 ggdensity(sd.full$Zn,
           main = "Density of Zn",
           xlab = "Zn")
@@ -224,7 +321,11 @@ shapiro.test(sd.full$Zn)
 
 
 ##Check per_som
-plot(sd.full$per_som)
+plot(sd.full$per_som,
+     main = "per_som",
+     xlab = "Sample Number")
+hist(sd.full$per_som,
+     breaks = 50)
 ggdensity(sd.full$per_som,
           main = "Density of per_som",
           xlab = "per_som")
